@@ -40,9 +40,9 @@ implementation
 procedure TForm1.rgLangClick(Sender: TObject);
 begin
   case rgLang.ItemIndex of
-    0: SetDefaultLang('en','lang');
-    1: SetDefaultLang('ru','lang');
-    2: SetDefaultLang('de','lang');
+    0: SetDefaultLang('en','lang','i18n');
+    1: SetDefaultLang('ru','lang', 'i18n');
+    2: SetDefaultLang('de','lang', 'i18n');
   end;
 
   Label2.Caption:= MsgCaption;
